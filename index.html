@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Data Scientist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <span class="nav-logo">yourname<span class="dot">.</span></span>
+  <div class="nav-links">
+    <a href="#about">about</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <canvas id="graph-canvas"></canvas>
+  <div class="hero-content">
+    <p class="eyebrow">$ whoami</p>
+    <h1>Your Name</h1>
+    <p class="hero-sub">Data scientist turning messy data into decisions.<br>Currently going deeper into AI &amp; applied ML.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="section section-light" id="about">
+  <div class="section-inner">
+    <p class="eyebrow eyebrow-dark"># about</p>
+    <h2>A little context</h2>
+    <p class="body-text">
+      Replace this paragraph with 3–4 sentences: what you studied or taught yourself,
+      what kind of problems you like solving, and what you're currently learning.
+      Keep it human, not a resume — this is the "why," your resume is the "what."
+    </p>
+
+    <pre class="code-block"><code><span class="tok-var">skills</span> = {
+    <span class="tok-key">"languages"</span>: [<span class="tok-str">"Python"</span>, <span class="tok-str">"SQL"</span>],
+    <span class="tok-key">"ml"</span>:        [<span class="tok-str">"scikit-learn"</span>, <span class="tok-str">"PyTorch"</span>, <span class="tok-str">"pandas"</span>],
+    <span class="tok-key">"tools"</span>:     [<span class="tok-str">"Git"</span>, <span class="tok-str">"Docker"</span>, <span class="tok-str">"Streamlit"</span>],
+    <span class="tok-key">"currently_learning"</span>: [<span class="tok-str">"LLM fine-tuning"</span>]
+}</code></pre>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section section-dark" id="projects">
+  <div class="section-inner">
+    <p class="eyebrow">// projects</p>
+    <h2>Selected work</h2>
+
+    <!-- Project cell 1 -->
+    <article class="cell">
+      <div class="cell-io">
+        <span class="cell-tag cell-tag-in">In [1]:</span>
+        <div class="cell-text">
+          <h3>Project Title One</h3>
+          <p>Replace with the problem: what were you trying to solve, and why did it matter? One or two sentences, plain language, no jargon.</p>
+        </div>
+      </div>
+      <div class="cell-io cell-out">
+        <span class="cell-tag cell-tag-out">Out[1]:</span>
+        <div class="cell-text">
+          <p>Replace with the result: what you built and what happened. Use a real number if you have one — "cut processing time by 40%" beats "improved efficiency."</p>
+          <div class="cell-tags">
+            <span class="chip">Python</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">Pandas</span>
+          </div>
+          <div class="cell-links">
+            <a href="#" target="_blank">GitHub →</a>
+            <a href="#" target="_blank">Live demo →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project cell 2 -->
+    <article class="cell">
+      <div class="cell-io">
+        <span class="cell-tag cell-tag-in">In [2]:</span>
+        <div class="cell-text">
+          <h3>Project Title Two</h3>
+          <p>Same structure — problem statement in your own words. Keep it specific to one dataset or one question, not "I analyzed data."</p>
+        </div>
+      </div>
+      <div class="cell-io cell-out">
+        <span class="cell-tag cell-tag-out">Out[2]:</span>
+        <div class="cell-text">
+          <p>What you found or built, and the outcome. If it's a model, mention the metric that matters (accuracy, F1, latency) — whatever you'd defend in an interview.</p>
+          <div class="cell-tags">
+            <span class="chip">SQL</span>
+            <span class="chip">Tableau</span>
+          </div>
+          <div class="cell-links">
+            <a href="#" target="_blank">GitHub →</a>
+            <a href="#" target="_blank">Write-up →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project cell 3 -->
+    <article class="cell">
+      <div class="cell-io">
+        <span class="cell-tag cell-tag-in">In [3]:</span>
+        <div class="cell-text">
+          <h3>Project Title Three</h3>
+          <p>A third project, ideally different in flavor from the other two — e.g. one analysis project, one deployed app, one AI/LLM experiment.</p>
+        </div>
+      </div>
+      <div class="cell-io cell-out">
+        <span class="cell-tag cell-tag-out">Out[3]:</span>
+        <div class="cell-text">
+          <p>Result and takeaway. It's fine to mention what you'd do differently next time — that shows judgment, not weakness.</p>
+          <div class="cell-tags">
+            <span class="chip">PyTorch</span>
+            <span class="chip">Hugging Face</span>
+          </div>
+          <div class="cell-links">
+            <a href="#" target="_blank">GitHub →</a>
+            <a href="#" target="_blank">Live demo →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-light" id="contact">
+  <div class="section-inner">
+    <p class="eyebrow eyebrow-dark"># contact</p>
+    <h2>Let's talk</h2>
+    <p class="body-text">Open to opportunities, collaboration, or just talking about a project. Reach out however's easiest.</p>
+
+    <pre class="code-block code-block-light"><code><span class="tok-var">socials</span> = {
+    <span class="tok-key">"email"</span>:    <a href="mailto:you@email.com" class="tok-str tok-link">"you@email.com"</a>,
+    <span class="tok-key">"github"</span>:   <a href="https://github.com/yourusername" target="_blank" class="tok-str tok-link">"github.com/yourusername"</a>,
+    <span class="tok-key">"linkedin"</span>: <a href="https://linkedin.com/in/yourusername" target="_blank" class="tok-str tok-link">"linkedin.com/in/yourusername"</a>,
+    <span class="tok-key">"kaggle"</span>:   <a href="https://kaggle.com/yourusername" target="_blank" class="tok-str tok-link">"kaggle.com/yourusername"</a>
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Built with HTML, CSS &amp; a little curiosity.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
