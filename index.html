@@ -63,29 +63,31 @@
 
     <!-- Project cell 1 -->
     <article class="cell">
-      <div class="cell-io">
-        <span class="cell-tag cell-tag-in">In [1]:</span>
-        <div class="cell-text">
-          <h3>Project Title One</h3>
-          <p>Replace with the problem: what were you trying to solve, and why did it matter? One or two sentences, plain language, no jargon.</p>
-        </div>
+  <div class="cell-io">
+    <span class="cell-tag cell-tag-in">In [1]:</span>
+    <div class="cell-text">
+      <h3>Brain Tumor Detection (MRI Classification)</h3>
+      <p>Built a deep learning system to classify brain MRI scans into glioma, meningioma, pituitary tumor, or no tumor — trained on 3,264 medical images across 4 classes. Compared two transfer-learning backbones (EfficientNetV2-B0 vs. ResNet50) to evaluate the accuracy/efficiency tradeoff.</p>
+    </div>
+  </div>
+  <div class="cell-io cell-out">
+    <span class="cell-tag cell-tag-out">Out[1]:</span>
+    <div class="cell-text">
+      <p>ResNet50 achieved the strongest overall performance (76.9% test accuracy, 0.939 AUC-ROC) despite being ~3.6x larger than EfficientNetV2-B0 (71.6% test accuracy, 0.893 AUC-ROC). Notably, EfficientNetV2 was better at catching glioma cases — the hardest class for both models — showing model choice isn't just about the headline number. Deployed the pipeline as an interactive Streamlit app for real-time MRI classification.</p>
+      <div class="cell-tags">
+        <span class="chip">Python</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">EfficientNetV2</span>
+        <span class="chip">ResNet50</span>
+        <span class="chip">Streamlit</span>
       </div>
-      <div class="cell-io cell-out">
-        <span class="cell-tag cell-tag-out">Out[1]:</span>
-        <div class="cell-text">
-          <p>Replace with the result: what you built and what happened. Use a real number if you have one — "cut processing time by 40%" beats "improved efficiency."</p>
-          <div class="cell-tags">
-            <span class="chip">Python</span>
-            <span class="chip">scikit-learn</span>
-            <span class="chip">Pandas</span>
-          </div>
-          <div class="cell-links">
-            <a href="#" target="_blank">GitHub →</a>
-            <a href="#" target="_blank">Live demo →</a>
-          </div>
-        </div>
+      <div class="cell-links">
+        <a href="#" target="_blank">GitHub →</a>
+        <a href="#" target="_blank">Live demo →</a>
       </div>
-    </article>
+    </div>
+  </div>
+</article>
 
     <!-- Project cell 2 -->
     <article class="cell">
