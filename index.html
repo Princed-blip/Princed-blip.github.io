@@ -134,29 +134,30 @@
     </article>
 
     <!-- Project cell 2 -->
-    <article class="cell">
-      <div class="cell-io">
-        <span class="cell-tag cell-tag-in">In [2]:</span>
-        <div class="cell-text">
-          <h3>Project Title Two</h3>
-          <p>Same structure — problem statement in your own words. Keep it specific to one dataset or one question, not "I analyzed data."</p>
-        </div>
+<article class="cell">
+  <div class="cell-io">
+    <span class="cell-tag cell-tag-in">In [2]:</span>
+    <div class="cell-text">
+      <h3>Glaucoma Detection (Retinal Fundus Imaging)</h3>
+      <p>Built and compared two deep learning models to detect glaucoma from retinal fundus images, using the SMDG benchmark dataset (~12,300 images: 7,549 normal vs. 4,767 glaucoma cases).</p>
+    </div>
+  </div>
+  <div class="cell-io cell-out">
+    <span class="cell-tag cell-tag-out">Out[2]:</span>
+    <div class="cell-text">
+      <p>A custom CNN built from scratch reached 81.3% test accuracy (0.922 AUC), while EfficientNetB0 via transfer learning reached 86.0% accuracy (0.929 AUC) — but with lower sensitivity (78% vs. 84%) at the default threshold. Since missing a real glaucoma case is far costlier than a false alarm in a screening context, I tuned the decision threshold down to 0.35, raising sensitivity to 85.5% at a deliberate cost to specificity — prioritizing the metric that matters clinically over raw accuracy.</p>
+      <div class="cell-tags">
+        <span class="chip">Python</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">EfficientNetB0</span>
+        <span class="chip">CNN</span>
       </div>
-      <div class="cell-io cell-out">
-        <span class="cell-tag cell-tag-out">Out[2]:</span>
-        <div class="cell-text">
-          <p>What you found or built, and the outcome. If it's a model, mention the metric that matters (accuracy, F1, latency) — whatever you'd defend in an interview.</p>
-          <div class="cell-tags">
-            <span class="chip">SQL</span>
-            <span class="chip">Tableau</span>
-          </div>
-          <div class="cell-links">
-            <a href="#" target="_blank">GitHub →</a>
-            <a href="#" target="_blank">Write-up →</a>
-          </div>
-        </div>
+      <div class="cell-links">
+        <a href="#" target="_blank">GitHub →</a>
       </div>
-    </article>
+    </div>
+  </div>
+</article>
 
     <!-- Project cell 3 -->
     <article class="cell">
