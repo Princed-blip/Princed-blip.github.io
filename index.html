@@ -160,30 +160,32 @@
 </article>
 
     <!-- Project cell 3 -->
-    <article class="cell">
-      <div class="cell-io">
-        <span class="cell-tag cell-tag-in">In [3]:</span>
-        <div class="cell-text">
-          <h3>Project Title Three</h3>
-          <p>A third project, ideally different in flavor from the other two — e.g. one analysis project, one deployed app, one AI/LLM experiment.</p>
-        </div>
+    <!-- Project cell 3 -->
+<article class="cell">
+  <div class="cell-io">
+    <span class="cell-tag cell-tag-in">In [3]:</span>
+    <div class="cell-text">
+      <h3>Breast Cancer Detection &amp; Diagnosis</h3>
+      <p>Built and compared 4 classifiers (Logistic Regression, Random Forest, SVM, KNN) to classify tumors as benign or malignant, using the Wisconsin Breast Cancer dataset (569 patients, 30 diagnostic features from cell nuclei measurements). Also tested whether a reduced feature set could retain performance.</p>
+    </div>
+  </div>
+  <div class="cell-io cell-out">
+    <span class="cell-tag cell-tag-out">Out[3]:</span>
+    <div class="cell-text">
+      <p>After removing highly correlated features and tuning hyperparameters via GridSearchCV, Logistic Regression came out on top: 97% accuracy, 98% recall on malignant cases, and 0.997 AUC-ROC — validated with 10-fold cross-validation (97.58% mean accuracy). Reducing to just 11 core features (from 24) held accuracy nearly steady at 96.5%, confirming the model's predictive power came from a small set of genuinely informative measurements rather than redundant noise.</p>
+      <div class="cell-tags">
+        <span class="chip">Python</span>
+        <span class="chip">scikit-learn</span>
+        <span class="chip">Logistic Regression</span>
+        <span class="chip">GridSearchCV</span>
       </div>
-      <div class="cell-io cell-out">
-        <span class="cell-tag cell-tag-out">Out[3]:</span>
-        <div class="cell-text">
-          <p>Result and takeaway. It's fine to mention what you'd do differently next time — that shows judgment, not weakness.</p>
-          <div class="cell-tags">
-            <span class="chip">PyTorch</span>
-            <span class="chip">Hugging Face</span>
-          </div>
-          <div class="cell-links">
-            <a href="#" target="_blank">GitHub →</a>
-            <a href="#" target="_blank">Live demo →</a>
-          </div>
-        </div>
+      <div class="cell-links">
+        <a href="https://github.com/Princed-blip/Breast-Cancer-Detection-App" target="_blank">GitHub →</a>
+        <a href="https://breast-cancer-detection-app-003.streamlit.app" target="_blank">Live demo →</a>
       </div>
-    </article>
-
+    </div>
+  </div>
+</article>
   </div>
 </section>
 
